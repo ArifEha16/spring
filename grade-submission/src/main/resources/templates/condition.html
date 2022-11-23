@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditions</title>
+</head>
+<body>
+<p th:text="${sales>100}?'Salses are good' : 'sales are not good'"><p/>
+<div th:swich="${product}">
+    <p th:case="'tv'">this is tv</p>
+    <p th:case="'table'">this is table</p>
+    <p th:case="*">this is not match</p>
+
+</div>
+</body>
+</html>
